@@ -12,14 +12,15 @@ const CreateUrl = () => {
         if(!mail){
             return alert("enter the url")
         }
-       const rees= await axios.post("http://localhost:3500/input/url",{
+       const rees= await axios.post("https://day6nodejsbe.onrender.com/input/url",{
             url:mail
         },{
             withCredentials:true
         })
         console.log(rees.data)
         setmail("")
-        setresult(rees.data.message)
+        const add=`https://day6nodejsbe.onrender.com/${rees.data.message}`
+        setresult(add)
         setname(true)
       }catch(e){
         alert(e.message)

@@ -23,7 +23,7 @@ const Signup = () => {
         if(!values.email||!values.last||!values.first||!values.password){
             return alert("fill all inputs")
         }
-        const rees=  await axios.post("http://localhost:3500/users/signup",{
+        const rees=  await axios.post("https://day6nodejsbe.onrender.com/users/signup",{
             firstname:values.first,
             lastname:values.last,
             email:values.email,

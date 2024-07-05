@@ -20,7 +20,7 @@ const Login = () => {
     const handlesubmit=async(e)=>{
         e.preventDefault()
        try{
-        const rees=await axios.post("http://localhost:3500/users/login",{
+        const rees=await axios.post("https://day6nodejsbe.onrender.com/users/login",{
             email:values.email,
             password:values.password
         },{
@@ -45,7 +45,7 @@ const Login = () => {
         if(!mail){
             return alert("enter the mail")
         }
-       const rees= await axios.post("http://localhost:3500/users/forgetpassword",{
+       const rees= await axios.post("https://day6nodejsbe.onrender.com/users/forgetpassword",{
             email:mail
         },{
             withCredentials:true

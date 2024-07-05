@@ -9,7 +9,7 @@ const Activate = () => {
         if(!mail){
             return alert("enter the mail")
         }
-       const rees= await axios.post("http://localhost:3500/users/activate",{
+       const rees= await axios.post("https://day6nodejsbe.onrender.com/users/activate",{
             email:mail
         },{
             withCredentials:true

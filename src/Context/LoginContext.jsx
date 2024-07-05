@@ -9,7 +9,7 @@ const Logincontext=({children})=>{
    useEffect(() => {
     const checkLoginStatus = async () => {
       try {
-        const response = await axios.post('http://localhost:3500/users/checklogin',{},{withCredentials:true});
+        const response = await axios.post('https://day6nodejsbe.onrender.com/users/checklogin',{},{withCredentials:true});
         if (response.data.message === "okk") {
           setlogin(true);
         }

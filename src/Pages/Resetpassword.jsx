@@ -21,7 +21,7 @@ const Resetpassword = () => {
         if(!values.otp||!values.password||!values.repassword){
             return alert("fill all inputs")
         }
-       const rees= await axios.post("http://localhost:3500/users/resetpassword",{
+       const rees= await axios.post("https://day6nodejsbe.onrender.com/users/resetpassword",{
             otp:values.otp,
             repass:values.repassword,
             password:values.password

@@ -6,13 +6,13 @@ import { Usercontext } from '../Context/LoginContext'
 const Home = () => {
     const [islogin,setlogin]= useContext(Usercontext)
     const handlelogout= async()=>{
-      const rees= await axios.post("http://localhost:3500/users/logout",{},{withCredentials:true})
+      const rees= await axios.post("https://day6nodejsbe.onrender.com/users/logout",{},{withCredentials:true})
        alert(rees.data.message)  
        setlogin(false)
     }
     const [mail,setmail]=useState([])
     useState(async()=>{
-       const rees=await axios.get("http://localhost:3500/input/urls")
+       const rees=await axios.get("https://day6nodejsbe.onrender.com/input/urls")
        setmail(rees.data)
 
     },[])
