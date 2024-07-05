@@ -11,7 +11,7 @@ const History = () => {
     <div className='common'><table className="table table-striped">
     <thead><tr><td>No.</td><td>urls</td></tr></thead>
     <tbody>{mail.map((val)=>(
-        <tr key={val.lengths}><td>{val.lengths}</td><td>{"https://day6nodejsbe.onrender.com/"+val.random}</td></tr>
+        <tr key={val.lengths}><td>{val.lengths}</td><td>{"https://day6nodejsbe.onrender.com/input/"+val.random}</td></tr>
     ))}</tbody>
   </table></div>
   )
