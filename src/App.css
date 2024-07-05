@@ -1,0 +1,17 @@
+.common{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  table{
+    width: 50%;
+    td{
+      min-width: 20%;
+    }
+  }
+}
+.forget{
+  margin-top: 10px;
+  cursor: pointer;
+  color: blue;
+}
