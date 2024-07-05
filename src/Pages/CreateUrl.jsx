@@ -17,9 +17,8 @@ const CreateUrl = () => {
         },{
             withCredentials:true
         })
-        console.log(rees.data)
         setmail("")
-        const add=`https://day6nodejsbe.onrender.com/${rees.data.message}`
+        const add=`https://day6nodejsbe.onrender.com/input/${rees.data.message}`
         setresult(add)
         setname(true)
       }catch(e){
